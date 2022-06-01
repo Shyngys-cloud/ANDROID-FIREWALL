@@ -1,0 +1,92 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="AppThemeDark" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+
+    <style name="TextDesc.Error" parent="TextDesc">
+        <item name="android:textColor">@color/text_error</item>
+    </style>
+
+    <style name="MyButton" parent="@android:style/TextAppearance.Widget.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextDesc">
+        <item name="android:textColor">@color/text_light_black</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@string/font_family_regular_400</item>
+    </style>
+
+    <style name="TextTitle">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@string/font_family_regular_400</item>
+    </style>
+
+    <style name="TextPhone">
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">monospace</item>
+    </style>
+
+    <style name="TextPhoneInput">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">monospace</item>
+    </style>
+
+    <style name="TextSubTitle">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@string/font_family_medium_500</item>
+    </style>
+
+    <style name="TextSubTitle.20">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:windowBackground">@drawable/splash_bg</item>
+    </style>
+
+    <style name="TextSmallDesc">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@string/font_family_regular_400</item>
+    </style>
+
+    <style name="TextDescAddress">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@string/font_family_regular_400</item>
+    </style>
+
+    <style name="TextDescAddress.16">
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

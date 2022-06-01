@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.firewallminor.auth.PhoneViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/auth_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/auth_pic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintBottom_toTopOf="@+id/auth_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_logo_mine" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <TextView
+            android:id="@+id/auth_title"
+            style="@style/TextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_24sdp"
+            android:layout_marginEnd="@dimen/_24sdp"
+            android:layout_marginBottom="14dp"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:text="@string/auth_phone_title"
+            app:layout_constraintBottom_toTopOf="@+id/auth_desc" />
+
+        <TextView
+            android:id="@+id/auth_desc"
+            style="@style/TextDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_24sdp"
+            android:layout_marginEnd="@dimen/_24sdp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/auth_phone_desc"
+            app:layout_constraintBottom_toTopOf="@+id/line" />
+
+        <TextView
+            android:id="@+id/auth_phone_hint"
+            style="@style/TextPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="@{viewModel.authPhoneHint}"
+            android:textColor="@color/grey_material"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/auth_phone_hint"
+            app:layout_constraintTop_toTopOf="@+id/auth_phone_hint">
+
+            <ImageView
+                android:id="@+id/countryImage"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:contentDescription="@null"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/countryNumber"
+                style="@style/TextPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_7"
+                android:textColor="@color/app_orange" />
+        </RelativeLayout>
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/auth_phone"
+            style="@style/TextPhoneInput"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:afterTextChanged="@{(text) -> viewModel.onTextChanged(text)}"
+            android:background="@null"
+            android:digits="0123456789"
+            android:inputType="phone"
+            android:textColor="@color/app_orange"
+            android:maxLines="1"
+            android:text="@={viewModel.phone}"
+            app:layout_constraintBottom_toBottomOf="@+id/auth_phone_hint"
+            app:layout_constraintEnd_toEndOf="@+id/auth_phone_hint"
+            app:layout_constraintStart_toStartOf="@+id/auth_phone_hint"
+            app:layout_constraintTop_toTopOf="@+id/auth_phone_hint" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/next"
+            android:layout_width="0dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="@dimen/_24sdp"
+            android:layout_marginEnd="@dimen/_24sdp"
+            android:layout_marginBottom="@dimen/_44sdp"
+            android:enabled="@{viewModel.enabled}"
+            android:onClick="@{() -> viewModel.onClick()}"
+            android:text="@string/auth_phone_btn"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:backgroundTint="@color/color_btn_simple_bg"
+            app:cornerRadius="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

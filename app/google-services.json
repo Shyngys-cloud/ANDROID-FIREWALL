@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "479957697670",
+    "firebase_url": "https://diploma-c971d-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "diploma-c971d",
+    "storage_bucket": "diploma-c971d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479957697670:android:d3ae1a84246d8cdb1cfd07",
+        "android_client_info": {
+          "package_name": "com.example.firewallminor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479957697670-01ihnv5pt7afpqso1nr4tcg7lnso1ds6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAv4QaiYZucXg3PAZ5vVMZ6WEHO1KtUH2s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479957697670-01ihnv5pt7afpqso1nr4tcg7lnso1ds6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479957697670:android:057aeceffc00d5b91cfd07",
+        "android_client_info": {
+          "package_name": "eu.faircode.netguard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479957697670-01ihnv5pt7afpqso1nr4tcg7lnso1ds6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAv4QaiYZucXg3PAZ5vVMZ6WEHO1KtUH2s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479957697670-01ihnv5pt7afpqso1nr4tcg7lnso1ds6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479957697670:android:cc31612f4911b9fc1cfd07",
+        "android_client_info": {
+          "package_name": "kz.diploma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479957697670-idvrrakcbc085lbiqjfekv917274fhck.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kz.diploma",
+            "certificate_hash": "0a761938b968b3f874a3161117499fbcea69a6b9"
+          }
+        },
+        {
+          "client_id": "479957697670-01ihnv5pt7afpqso1nr4tcg7lnso1ds6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAv4QaiYZucXg3PAZ5vVMZ6WEHO1KtUH2s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479957697670-01ihnv5pt7afpqso1nr4tcg7lnso1ds6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
